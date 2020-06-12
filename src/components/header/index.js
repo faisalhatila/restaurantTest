@@ -1,10 +1,13 @@
 import React from "react";
-import { Navbar } from "..";
+import { Navbar, Cover } from "..";
 
 const Header = (props) => {
   return (
-    <div className="headerComponentDiv">
-      <Navbar />
+    <div>
+      <div className="headerComponentDiv">
+        <Navbar />
+      </div>
+      <Cover />
     </div>
   );
 };
