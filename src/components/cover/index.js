@@ -33,7 +33,7 @@ export default class Cover extends Component {
             </div>
           </div>
         </div>
-        <div className="coverDivLastDivParent">
+        <div className="coverDivLastDivParent d-none d-md-flex d-lg-flex">
           <div className="parallax_scroll coverDivLastDiv row">
             <div className="col-4 d-flex">
               <i
