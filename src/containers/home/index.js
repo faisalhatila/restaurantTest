@@ -6,7 +6,7 @@ class HomeContainer extends Component {
   render() {
     return (
       <div className="home-container">
-        I AM HOME <Link to="/login">Go to Login</Link>
+        {/* I AM HOME <Link to="/login">Go to Login</Link> */}
       </div>
     );
   }

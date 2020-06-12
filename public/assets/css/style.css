@@ -50,7 +50,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #18d26e;
+  background: #d70d47;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -62,6 +62,7 @@ h6 {
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
+  box-shadow: 0px 0px 5px 2px #eee;
 }
 
 .back-to-top i {
@@ -188,7 +189,7 @@ h6 {
 }
 
 #intro .carousel-item::before {
-  content: '';
+  content: "";
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 100%;
@@ -378,20 +379,22 @@ h6 {
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 0 8px 10px 8px;
+  padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #000;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
+  font-size: 15px;
+  /* text-transform: uppercase; */
   outline: none;
+  color: #f14f55;
+  font-weight: 500;
 }
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #18d26e;
+  /* color: #d60d43; */
 }
 
 .nav-menu > li {
@@ -433,14 +436,15 @@ h6 {
   right: 0;
   top: 0;
   z-index: 999;
-  margin: 20px 20px 0 0;
+  margin: 2px 10px 0 0;
   border: 0;
   background: none;
-  font-size: 24px;
+  font-size: 15px;
   display: none;
   transition: all 0.4s;
   outline: none;
   cursor: pointer;
+  min-height: 100%;
 }
 
 #mobile-nav-toggle i {
@@ -563,7 +567,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h3::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 120px;
@@ -574,7 +578,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h3::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 40px;
@@ -609,7 +613,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #featured-services .box-bg {
-  background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
+  background-image: linear-gradient(
+    0deg,
+    #000000 0%,
+    #242323 50%,
+    #000000 100%
+  );
 }
 
 #featured-services i {
@@ -651,7 +660,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -691,7 +700,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   text-align: center;
   border: 4px solid #fff;
-  left: calc( 50% - 32px);
+  left: calc(50% - 32px);
   bottom: -30px;
   transition: 0.3s;
 }
@@ -786,7 +795,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -850,7 +860,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #skills .progress-bar {
   width: 1px;
   text-align: left;
-  transition: .9s;
+  transition: 0.9s;
 }
 
 /* Facts Section
@@ -864,7 +874,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #facts::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -1420,7 +1430,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top h4::before,
 #footer .footer-top h4::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
