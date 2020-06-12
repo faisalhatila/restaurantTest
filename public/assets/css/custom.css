@@ -58,7 +58,8 @@ a {
   color: #d70d47;
 }
 .redFont {
-  color: #d70d47 !important;
+  /* color: #d70d47 !important; */
+  color: #f14f55 !important;
 }
 .navbarHorizontalRow {
   margin-top: 1rem;

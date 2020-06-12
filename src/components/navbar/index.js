@@ -68,7 +68,7 @@ export default class Navbar extends Component {
                 style={{ transform: "translateX(-5px)" }}
               >
                 <i
-                  class="fas fa-shopping-bag pl-2 redFont"
+                  class="fas fa-cart-plus pl-2 redFont"
                   style={{ fontSize: "25px" }}
                 />
               </Link>
@@ -138,26 +138,26 @@ export default class Navbar extends Component {
             <nav id="mobile-nav">
               <ul className="" style={{ touchAction: "pan-y" }}>
                 <li>
-                  <a href="#">Women</a>
+                  <a href="#">Restaurants</a>
                 </li>
                 <li>
-                  <a href="#">Men</a>
+                  <a href="#">My Orders</a>
                 </li>
                 <li>
-                  <a href="#">Teen</a>
+                  <a href="#">Ramadan Deals</a>
                 </li>
                 <li>
-                  <a href="#">Kids</a>
+                  <a href="#">Offers</a>
                 </li>
                 <li>
-                  <a href="#">Socks</a>
+                  <a href="#">Become A Partner</a>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/cart">
                     My Cart
                     <i class="fas fa-shopping-bag pl-2 redFont" />
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
