@@ -338,7 +338,7 @@ a {
   text-align: center;
 }
 .getConnectedComponentRow2 > div {
-  z-index: -1;
+  /* z-index: -1; */
 }
 .getConnectedRow2Col {
   display: flex;
@@ -363,6 +363,23 @@ a {
 }
 .getConnectedContentPara {
   font-size: 13px;
+}
+.getConnectedColmn {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+.getConnectedRow2Col > i {
+  transition: all 0.5s ease;
+}
+.getConnectedColmn:hover .getConnectedRow2Col > i {
+  box-shadow: 0px 0px 5px 2px #800;
+  border: solid 1px #800;
+  color: #800;
+  transform: rotate(360deg);
+}
+.getConnectedColmn:hover {
+  box-shadow: 0px 0px 5px 2px #eee;
 }
 /*******************************************************************************Get Connected End**************************************************************************************/
 /*******************************************************************************Featured Restaurant Start**************************************************************************************/
