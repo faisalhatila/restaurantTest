@@ -9,6 +9,7 @@
   margin: 0;
   padding: 10px;
   color: #fff;
+  z-index: 999;
 }
 .bradCrumbRow > label > a {
   color: #fff;
@@ -364,3 +365,21 @@ a {
   font-size: 13px;
 }
 /*******************************************************************************Get Connected End**************************************************************************************/
+.featuredRestaurantFirstRow > h2 {
+  text-align: center;
+  margin: 0;
+  color: #f14f55;
+}
+.featuredRestaurantFirstRow > P {
+  text-align: center;
+  margin: 0;
+  color: #000;
+}
+.featuredRestaurantButton {
+  border: none;
+  background-color: #0dd6ff;
+  color: #fff;
+  outline: none;
+  border-radius: 15px;
+  padding: 3px 15px;
+}
