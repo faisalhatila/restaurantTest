@@ -61,7 +61,12 @@ export default class FeaturedRestaurant extends Component {
                 <div className="col-12 col-lg-4 col-md-4">
                   <img
                     src="assets/img/featuredRestaurant.jpg"
-                    style={{ maxWidth: "100%", filter: "blur(5px)" }}
+                    style={{
+                      maxWidth: "100%",
+                      filter: "blur(5px)",
+                      maxHeight: "233px",
+                      minWidth: "100%",
+                    }}
                   />
                   <div
                     style={{
@@ -82,7 +87,12 @@ export default class FeaturedRestaurant extends Component {
                 <div className="col-12 col-lg-4 col-md-4">
                   <img
                     src="assets/img/featuredRestaurant.jpg"
-                    style={{ maxWidth: "100%", filter: "blur(5px)" }}
+                    style={{
+                      maxWidth: "100%",
+                      filter: "blur(5px)",
+                      maxHeight: "233px",
+                      minWidth: "100%",
+                    }}
                   />
                   <div
                     style={{
@@ -103,7 +113,12 @@ export default class FeaturedRestaurant extends Component {
                 <div className="col-12 col-lg-4 col-md-4">
                   <img
                     src="assets/img/featuredRestaurant.jpg"
-                    style={{ maxWidth: "100%", filter: "blur(5px)" }}
+                    style={{
+                      maxWidth: "100%",
+                      filter: "blur(5px)",
+                      maxHeight: "233px",
+                      minWidth: "100%",
+                    }}
                   />
                   <div
                     style={{
