@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import ScrollAnimation from "react-animate-on-scroll";
 export default class GetConnected extends Component {
   render() {
     return (
@@ -10,34 +10,40 @@ export default class GetConnected extends Component {
         </div>
         <div className="getConnectedComponentRow2 row mt-3">
           <div className="col-12 col-lg-4 col-md-4 getConnectedColmn">
-            <div className="getConnectedRow2Col getConnectedRow2Col1">
-              <i class="fas fa-car"></i>
-            </div>
-            <h3 className="getConnectedContentHeading mt-3">Customers</h3>
-            <p className="getConnectedContentPara">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page
-            </p>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <div className="getConnectedRow2Col getConnectedRow2Col1">
+                <i class="fas fa-car"></i>
+              </div>
+              <h3 className="getConnectedContentHeading mt-3">Customers</h3>
+              <p className="getConnectedContentPara">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page
+              </p>
+            </ScrollAnimation>
           </div>
           <div className="col-12 col-lg-4 col-md-4 getConnectedColmn">
-            <div className="getConnectedRow2Col getConnectedRow2Col2">
-              <i class="fas fa-car"></i>
-            </div>
-            <h3 className="getConnectedContentHeading mt-3">Restaurants</h3>
-            <p className="getConnectedContentPara">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page
-            </p>
+            <ScrollAnimation animateIn="fadeInUp">
+              <div className="getConnectedRow2Col getConnectedRow2Col2">
+                <i class="fas fa-car"></i>
+              </div>
+              <h3 className="getConnectedContentHeading mt-3">Restaurants</h3>
+              <p className="getConnectedContentPara">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page
+              </p>
+            </ScrollAnimation>
           </div>
           <div className="col-12 col-lg-4 col-md-4 getConnectedColmn">
-            <div className="getConnectedRow2Col getConnectedRow2Col3">
-              <i class="fas fa-car"></i>
-            </div>
-            <h3 className="getConnectedContentHeading mt-3">Drivers</h3>
-            <p className="getConnectedContentPara">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page
-            </p>
+            <ScrollAnimation animateIn="fadeInRight">
+              <div className="getConnectedRow2Col getConnectedRow2Col3">
+                <i class="fas fa-car"></i>
+              </div>
+              <h3 className="getConnectedContentHeading mt-3">Drivers</h3>
+              <p className="getConnectedContentPara">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page
+              </p>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
