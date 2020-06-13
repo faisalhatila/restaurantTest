@@ -10,7 +10,7 @@ export default class GetConnected extends Component {
         </div>
         <div className="getConnectedComponentRow2 row mt-3">
           <div className="col-12 col-lg-4 col-md-4 getConnectedColmn">
-            <ScrollAnimation animateIn="fadeInLeft">
+            <ScrollAnimation animateIn="fadeInDown">
               <div className="getConnectedRow2Col getConnectedRow2Col1">
                 <i class="fas fa-car"></i>
               </div>
@@ -34,7 +34,7 @@ export default class GetConnected extends Component {
             </ScrollAnimation>
           </div>
           <div className="col-12 col-lg-4 col-md-4 getConnectedColmn">
-            <ScrollAnimation animateIn="fadeInRight">
+            <ScrollAnimation animateIn="fadeInDown">
               <div className="getConnectedRow2Col getConnectedRow2Col3">
                 <i class="fas fa-car"></i>
               </div>
