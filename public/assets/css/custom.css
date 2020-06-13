@@ -325,3 +325,40 @@ a {
   }
 }
 /*******************************************************************************Cover Div End**************************************************************************************/
+.getConnectedComponentRow1 > h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  color: #f14f55;
+}
+.getConnectedComponentRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.getConnectedComponentRow2 > div {
+  z-index: -1;
+}
+.getConnectedRow2Col {
+  display: flex;
+  justify-content: center;
+}
+.getConnectedRow2Col > i {
+  border: solid 1px #000;
+  font-size: 60px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.getConnectedContentHeading {
+  color: #f14f55;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.getConnectedContentHeading,
+.getConnectedContentPara {
+  text-align: center;
+  margin: 0;
+}
+.getConnectedContentPara {
+  font-size: 13px;
+}
