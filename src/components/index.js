@@ -4,6 +4,7 @@ import _Layout from "./layout";
 import _Navbar from "./navbar";
 import _Cover from "./cover";
 import _GetConnected from "./getconnected";
+import _FeaturedRestaurant from "./featuredrestaurant";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -11,3 +12,4 @@ export const Layout = _Layout;
 export const Navbar = _Navbar;
 export const Cover = _Cover;
 export const GetConnected = _GetConnected;
+export const FeaturedRestaurant = _FeaturedRestaurant;
