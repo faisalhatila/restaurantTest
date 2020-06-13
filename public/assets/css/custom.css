@@ -383,3 +383,55 @@ a {
   border-radius: 15px;
   padding: 3px 15px;
 }
+
+.footerMainParent {
+  background-color: #880006;
+  color: #fff;
+}
+.footerCol1 > h2 {
+  margin: 0;
+}
+.footerCol1 > div > i {
+  font-size: 22px;
+}
+.footerCol2 {
+  border-left: solid 2px #ccc;
+}
+.footerCol2 > h5,
+.footerCol2 > p {
+  margin: 0;
+}
+.footerCol2 > p {
+  font-size: 13px;
+}
+.footerCol2 > div > p {
+  margin: 0;
+}
+.footerCol3 > div > p {
+  margin: 0;
+}
+.subscribeInputField::placeholder {
+  color: #fff;
+}
+.subscribeInputField {
+  min-width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px #fff;
+}
+.subscribeButtonDiv > button {
+  border: none;
+  background-color: #fff;
+  color: #f14f55;
+  border-radius: 15px;
+  padding: 3px 20px;
+  font-weight: 600;
+}
+.footerSecRow {
+  border-top: solid 1px #ccc;
+}
+.footerNav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
