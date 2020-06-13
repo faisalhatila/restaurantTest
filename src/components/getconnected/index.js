@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class GetConnected extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container mt-5">
         <div className="getConnectedComponentRow1">
           <h2>Get Connected With Us</h2>
           <p>in any you want to</p>
