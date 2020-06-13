@@ -400,6 +400,11 @@ a {
   outline: none;
   border-radius: 15px;
   padding: 3px 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.featuredRestaurantButton:hover {
+  background-color: #800;
 }
 .featuredRestaurants {
   cursor: pointer;

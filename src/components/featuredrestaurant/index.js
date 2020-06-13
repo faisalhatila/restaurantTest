@@ -182,9 +182,11 @@ export default class FeaturedRestaurant extends Component {
               </div>
             </div>
           </ScrollAnimation>
-          <div className="featuredRestaurantThirdRow mt-4 row justify-content-center">
-            <button className="featuredRestaurantButton">View All</button>
-          </div>
+          {!isLoading ? (
+            <div className="featuredRestaurantThirdRow mt-4 row justify-content-center">
+              <button className="featuredRestaurantButton">View All</button>
+            </div>
+          ) : null}
         </div>
       </div>
     );
