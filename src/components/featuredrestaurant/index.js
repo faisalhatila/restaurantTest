@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default class FeaturedRestaurant extends Component {
   state = {
@@ -34,7 +35,7 @@ export default class FeaturedRestaurant extends Component {
       );
       setTimeout(() => {
         resolve(payload);
-      }, 10);
+      }, 5000);
     });
   getData = async () => {
     try {
@@ -56,7 +57,7 @@ export default class FeaturedRestaurant extends Component {
             <p>Based on rating</p>
           </div>
           {isLoading ? (
-            <div className="featuredRestaurantSecRow">
+            <div className="featuredRestaurantSecRow mt-5">
               <div className="row">
                 <div className="col-12 col-lg-4 col-md-4">
                   <img
@@ -139,45 +140,48 @@ export default class FeaturedRestaurant extends Component {
               </div>
             </div>
           ) : null}
-          <div className="featuredRestaurantSecRow">
-            <div className="row">
-              {!isLoading
-                ? data.map((items) => {
-                    return (
-                      <div className="col-12 col-lg-4 col-md-4 featuredRestaurants">
-                        <div className="imageContainer">
-                          <img
-                            src={items.image}
+          <ScrollAnimation animateIn="fadeInUp">
+            {" "}
+            <div className="featuredRestaurantSecRow mt-5">
+              <div className="row">
+                {!isLoading
+                  ? data.map((items) => {
+                      return (
+                        <div className="col-12 col-lg-4 col-md-4 featuredRestaurants">
+                          <div className="imageContainer">
+                            <img
+                              src={items.image}
+                              style={{
+                                // maxWidth: "100%",
+                                minWidth: "100%",
+                                maxHeight: "233px",
+                              }}
+                              className="resImage"
+                            />
+                            <div className="middle">
+                              <div class="text">View</div>
+                            </div>
+                          </div>
+                          <div
                             style={{
-                              // maxWidth: "100%",
-                              minWidth: "100%",
-                              maxHeight: "233px",
+                              padding: "10px",
+                              backgroundColor: "#fff",
                             }}
-                            className="resImage"
-                          />
-                          <div className="middle">
-                            <div class="text">View</div>
+                          >
+                            <h5 style={{ color: "#F14F55", margin: 0 }}>
+                              {items.name}
+                            </h5>
+                            <p style={{ fontSize: "13px", margin: 0 }}>
+                              {items.description}
+                            </p>
                           </div>
                         </div>
-                        <div
-                          style={{
-                            padding: "10px",
-                            backgroundColor: "#fff",
-                          }}
-                        >
-                          <h5 style={{ color: "#F14F55", margin: 0 }}>
-                            {items.name}
-                          </h5>
-                          <p style={{ fontSize: "13px", margin: 0 }}>
-                            {items.description}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })
-                : null}
+                      );
+                    })
+                  : null}
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
           <div className="featuredRestaurantThirdRow mt-4 row justify-content-center">
             <button className="featuredRestaurantButton">View All</button>
           </div>
