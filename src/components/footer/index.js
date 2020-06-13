@@ -42,7 +42,7 @@ const Footer = (props) => {
               />
             </div>
             <div className="subscribeButtonDiv mt-3 d-flex justify-content-center">
-              <button>Send</button>
+              <button className="subscribeButton">Send</button>
             </div>
           </div>
         </div>

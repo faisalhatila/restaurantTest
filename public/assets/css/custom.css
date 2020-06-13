@@ -509,6 +509,13 @@ a {
   border-radius: 15px;
   padding: 3px 20px;
   font-weight: 600;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.subscribeButton:hover {
+  background-color: #800;
+  color: #fff;
+  border: solid 1px #fff;
 }
 .footerSecRow {
   border-top: solid 1px #ccc;
