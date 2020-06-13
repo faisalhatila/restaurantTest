@@ -13,7 +13,7 @@ export default class FeaturedRestaurant extends Component {
     new Promise((resolve, reject) => {
       const images = [
         "assets/img/res1.jpg",
-        "assets/img/res2.jpg",
+        // "assets/img/res2.jpg",
         "assets/img/res3.jpg",
       ];
       const names = ["Alaska Restaurant", "Star Bucks", "Cafe 360"];
@@ -34,7 +34,7 @@ export default class FeaturedRestaurant extends Component {
       );
       setTimeout(() => {
         resolve(payload);
-      }, 5000);
+      }, 10);
     });
   getData = async () => {
     try {
@@ -144,15 +144,21 @@ export default class FeaturedRestaurant extends Component {
               {!isLoading
                 ? data.map((items) => {
                     return (
-                      <div className="col-12 col-lg-4 col-md-4">
-                        <img
-                          src={items.image}
-                          style={{
-                            maxWidth: "100%",
-                            minWidth: "100%",
-                            maxHeight: "233px",
-                          }}
-                        />
+                      <div className="col-12 col-lg-4 col-md-4 featuredRestaurants">
+                        <div className="imageContainer">
+                          <img
+                            src={items.image}
+                            style={{
+                              // maxWidth: "100%",
+                              minWidth: "100%",
+                              maxHeight: "233px",
+                            }}
+                            className="resImage"
+                          />
+                          <div className="middle">
+                            <div class="text">View</div>
+                          </div>
+                        </div>
                         <div
                           style={{
                             padding: "10px",

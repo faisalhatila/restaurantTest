@@ -365,6 +365,7 @@ a {
   font-size: 13px;
 }
 /*******************************************************************************Get Connected End**************************************************************************************/
+/*******************************************************************************Featured Restaurant Start**************************************************************************************/
 .featuredRestaurantFirstRow > h2 {
   text-align: center;
   margin: 0;
@@ -383,6 +384,57 @@ a {
   border-radius: 15px;
   padding: 3px 15px;
 }
+.featuredRestaurants {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  /* filter: grayscale(1); */
+}
+.featuredRestaurants:hover {
+  filter: drop-shadow(2px 4px 6px #ccc);
+  /* box-shadow: 2px 4px 6px #ccc; */
+  /* filter: grayscale(0); */
+}
+.imageContainer {
+  position: relative;
+  /* width: 50%; */
+}
+
+.resImage {
+  opacity: 1;
+  display: block;
+  /* width: 100%; */
+  /* height: auto; */
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageContainer:hover .resImage {
+  opacity: 0.3;
+}
+
+.imageContainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #ffebeb;
+  color: #880006;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*******************************************************************************Featured Restaurant End**************************************************************************************/
+/*******************************************************************************Footer Start**************************************************************************************/
 
 .footerMainParent {
   background-color: #880006;
@@ -436,3 +488,4 @@ a {
   display: flex;
   justify-content: space-around;
 }
+/*******************************************************************************Footer End**************************************************************************************/
