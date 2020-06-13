@@ -44,10 +44,6 @@ const Footer = (props) => {
             <div className="subscribeButtonDiv mt-3 d-flex justify-content-center">
               <button>Send</button>
             </div>
-            <div className="d-flex mt-4 align-items-center">
-              <i class="fas fa-envelope-open-text pr-3"></i>
-              <p>info@snaxa.com.</p>
-            </div>
           </div>
         </div>
         <div className="footerSecRow mt-4">
